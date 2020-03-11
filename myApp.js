@@ -13,7 +13,7 @@ app.use(function middleware(req, res, next) {
   });
 
 // --> 11)  Mount the body-parser middleware  here
-
+require('body-parser');
 
 /** 1) Meet the node console. */
 console.log("Hello World");
