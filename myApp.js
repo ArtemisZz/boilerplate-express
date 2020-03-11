@@ -56,7 +56,7 @@ app.get('/now', function(req, res, next) {
     req.time = new  Date().toString();  // Hypothetical synchronous operation
     next();
   }, function(req, res) {
-    res.send(req.time);
+    res.json({time: req.time});
   });
 
 /** 9)  Get input from client - Route parameters */
