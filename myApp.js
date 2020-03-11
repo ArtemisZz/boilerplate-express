@@ -7,6 +7,7 @@ var app = express();
 app.use(function middleware(req, res, next) {
     // Do something
     var string = req.method + " " + req.path + " - " + req.ip;
+    console.log(string);
     // Call the next function in line:
     next();
   });
