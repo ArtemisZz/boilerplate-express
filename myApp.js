@@ -70,7 +70,7 @@ app.get("/:word/echo", function(req,res){
 app.get("/name", function(req, res){
     var firstname = req.query.first;
     var lastname = req.query.last;
-    var name = firstname + lastname;
+    var name = firstname + ' ' + lastname;
     res.json({name : name});
 });
   
