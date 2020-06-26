@@ -83,7 +83,7 @@ app.get("/name", function(req, res){
 /** 12) Get data form POST  */
 
 
-app.listen(8000);
+app.listen(process.env.PORT || 3000);
 // This would be part of the basic setup of an Express app
 // but to allow FCC to run tests, the server is already active
 /** app.listen(process.env.PORT || 3000 ); */
